@@ -237,7 +237,7 @@ html.home{
 	font-size: 14px;
 	text-align: center;
 }
- 
+
 
 
 /* Refer a friend page */
@@ -249,13 +249,28 @@ html.home{
 .brandon{
 	font-family: "Brandon Grotesque", "brandon-grotesque", "HelveticaNeue", "Helvetica", "Arial", sans-serif;
 }
-
+/*
 #refer{
 	background: #FFF;
+}*/
+
+@media screen and (max-width: 1120px) {
+	#refer{
+		background: #FFF;
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	#refer{
+		background: red;
+		height: auto;
+	}
 }
 
 #refer .page-content{
-	width: 1120px;
+	max-width: 1120px;
+	width: 100%;
 	margin: 0 auto;
 	z-index: 0;
 	position: relative;
@@ -302,18 +317,24 @@ html.home{
 
 #refer .hero{
 	background: #F1F0EE;
-	height: 391px;
+	max-height: 407px;
 	overflow: hidden;
+	max-width: 1287px;
+	font-size: 14px;
 }
 
 #refer .mammoth{
-	width: 612px;
+	/*width: 612px;
+	height: 394px;*/
+	max-width: 612px;
+	width: 55.1%;
 	height: 394px;
 	background: url(/assets/refer/mammoth.png) 0 0 no-repeat;
-	background-size: 610px 394px;
+	/*background-size: 610px 394px;*/
 	overflow: hidden;
 	margin-top: 15px;
 	float: left;
+	background-size: cover;
 }
 
 #refer .mammoth .need{
@@ -408,7 +429,8 @@ html.home{
 	width: 100%;
 	background: #FFF;
 	border-top: 1px solid #D2D1C8;
-	padding-bottom: 100px;
+	padding-bottom: 50px;
+	height: auto;
 }
 
 #refer .prizes .page-content{
@@ -417,7 +439,7 @@ html.home{
 
 #refer .prizes .callout{
 	text-align: center;
-	font-size: 16px;
+	font-size: 27px;
 	color: #074E6F;
 	font-weight: bold;
 	margin: 20px 0 0 0;
@@ -468,7 +490,7 @@ html.home{
 	text-transform: uppercase;
 	color: #074E6F;
 	font-weight: 500;
-	font-size: 14px;
+	font-size: 16px;
 	float: left;
 	margin-right: 68px;
 	width: 165px;
@@ -585,7 +607,7 @@ html.home{
 	color: #074E6F;
 	width: 100%;
 	font-weight: 500;
-	margin-top: 30px;
+	margin-top: 45px;
 }
 
 #refer .prizes p.place span{
@@ -632,97 +654,59 @@ only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min-device-pixel-ratio: 2) {
 	#home .hero{
 		background: url(/assets/home/hero@2x.jpg) center center no-repeat;
-		background-size: 1600px 446px;
+		/*background-size: 1600px 446px;*/
+		background-size: cover;
 	}
 
 	#home .form-wrap .key{
 		background: url(/assets/home/key@2x.png) 0 0 no-repeat;
-		background-size: 46px 19px;
+		/*background-size: 46px 19px;*/
+		background-size: cover;
 	}
 
 	#refer .header .logo{
 		background: url(/assets/refer/logo@2x.png) 0 0 no-repeat;
-		background-size: 106px 19px;
+		/*background-size: 106px 19px;*/
+		background-size: cover;
 	}
 
 	#refer .mammoth{
 		background: url(/assets/refer/mammoth@2x.png) 0 0 no-repeat;
-		background-size: 610px 394px;
+		background-size: cover;
 	}
 
 	#refer .share-wrap .social-links .fb{
 		background: url(/assets/refer/fb@2x.png);
-		background-size: 27px 27px;
+		background-size: cover;
 	}
 
 	#refer .share-wrap .social-links .twit{
 		background: url(/assets/refer/twit@2x.png);
-		background-size: 27px 27px;
+		background-size: cover;
 	}
 
 	#refer .prizes .progress{
 		background: url(/assets/refer/progress-bg@2x.png) 0 0 repeat-x;
-		background-size: 1px 4px;
+		background-size: cover;
 	}
 
 	#refer .prizes .progress .mover .bar{
 		background: url(/assets/refer/progress-done@2x.png) 0 0 repeat-x;
-		background-size: 1px 4px;
+		background-size: cover;
 	}
 
 	#refer .prizes .progress .mover .razor{
 		background: url(/assets/refer/razor@2x.png) 0 0 no-repeat;
-		background-size: 82px 23px;
+		background-size: cover;
 	}
 
 	#refer .prizes .products li.product .caret{
 		background: url(/assets/refer/caret@2x.png) center center no-repeat;
-		background-size: 16px 10px;
+		background-size: cover;
 	}
 
 	#refer .prizes .products li.product.selected .caret{
 		background: url(/assets/refer/caret-selected@2x.png) center center no-repeat;
-		background-size: 16px 10px;
+		background-size: cover;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
